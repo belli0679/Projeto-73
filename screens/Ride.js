@@ -96,16 +96,13 @@ export default class RideScreen extends Component {
       if (isEligible) {
         var { bikeType, userName } = this.state;
         this.returnBike(bikeId, userId, bikeType, userName);
-        Alert.alert("Esperamos que tenha gostado do seu passeio");
-        this.setState({
-          bikeAssigned: false
-        });
+        
 
-        // For Android users only
-        // ToastAndroid.show(
-        //   "Esperamos que tenha gostado do seu passeio",
-        //   ToastAndroid.SHORT
-        // );
+         For Android users only
+         ToastAndroid.show(
+           "Esperamos que tenha gostado do seu passeio",
+           ToastAndroid.SHORT
+         );
       }
     }
   };
